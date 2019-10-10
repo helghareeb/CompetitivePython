@@ -1,14 +1,17 @@
 # بسم الله الرحمن الرحيم
 
 
-from life_np import Life
+from life import Life
 import matplotlib.pyplot as plt
 import numpy as np
 
-dim_row = 19
-dim_col = 19
-
-data = np.random.random_integers(0,1,(dim_row,dim_col))
+dim_row = 6
+dim_col = 6
+data = [ [ 0 * dim_col for i in range(dim_col)] * dim_row for j in range(dim_row) ]
+from random import randint
+for i in range(dim_row):
+    for j in range(dim_col):
+        data[i][j] = randint(0,1)
 
 # print(data)
 
