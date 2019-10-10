@@ -5,8 +5,8 @@ from life_np import Life
 import matplotlib.pyplot as plt
 import numpy as np
 
-dim_row = 19
-dim_col = 19
+dim_row = 200
+dim_col = 200
 
 data = np.random.random_integers(0,1,(dim_row,dim_col))
 
